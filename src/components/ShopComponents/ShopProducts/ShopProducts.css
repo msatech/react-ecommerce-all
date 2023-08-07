@@ -1,0 +1,85 @@
+
+.shopproducts{
+    margin:0 60px !important;
+    
+}
+
+.shopproducts .products__grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100% !important;
+    grid-gap:15px;
+}
+
+.shop__container{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.shop__container__filters{
+    flex:30%;
+    padding-right:50px;
+    
+
+}
+
+.shop__container__products{
+    flex:grow;
+    width: 100%;
+}
+
+
+/* Responsive Cards */
+
+
+
+  @media screen and (max-width:1300px){
+    .shopproducts .products__grid{
+        
+        grid-template-columns: repeat(4, 1fr);
+        
+    }
+    .shop__container__filters{
+        flex:0%;
+        display: none;
+    }
+  }
+
+  @media screen and (max-width:1100px){
+    .shopproducts .products__grid{
+        
+        grid-template-columns: repeat(3, 1fr);
+        
+    }
+    .shopproducts{
+        margin:0 20px !important;
+        
+    }
+  }
+
+  @media screen and (max-width:850px){
+    .shopproducts .products__grid{
+        
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+    .shopproducts{
+        margin:0 10px !important;
+        
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .shopproducts .products__grid{
+        
+        grid-template-columns: repeat(2, 1fr);
+        
+        
+    }
+    .shopproducts{
+        margin:0 10px !important;
+        
+    }
+    
+  }

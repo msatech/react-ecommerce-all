@@ -1,0 +1,74 @@
+.slick-dots > li button{
+    height: 15px !important;
+    width: 15px !important;
+    border-radius: 50% !important;
+    background-color: white;
+    border: 1px solid #FF2D55 !important;
+    opacity: 1 !important;
+   
+    
+}
+
+.slick-dots > li{
+    padding-right: 20px !important;
+}
+
+
+.slick-dots > .slick-active button {
+    height: 15px !important;
+    width: 40px !important;
+    border-radius: 8px !important;
+    background-color: #FF2D55 !important;
+    
+
+
+}
+
+
+
+@media screen and (max-width: 600px) {
+    /* .slick-dots > li button{
+        display: none !important;
+        
+    } */
+    .topslider__carousel img{
+        height: 170px !important;
+    }
+    .slick-dots > li button{
+        height: 10px !important;
+        width: 10px !important;
+        border-radius: 50% !important;
+        background-color: white;
+        border: 1px solid #FF2D55 !important;
+        opacity: 1 !important;
+        
+        
+    }
+    
+    .slick-dots > li{
+        padding-right: 15px !important;
+       
+    }
+    
+    
+    .slick-dots > .slick-active button {
+        height: 10px !important;
+        width: 30px !important;
+        border-radius: 8px !important;
+        background-color: #FF2D55 !important;
+        
+    
+    
+    }
+  }
+
+  @media screen and (max-width: 1200px){
+      
+  }
+
+  
+  @media screen and (max-width: 600px) {
+    .slick-dots > li button{
+        display: none !important;
+    }
+}

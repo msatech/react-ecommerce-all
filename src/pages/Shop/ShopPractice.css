@@ -1,0 +1,32 @@
+.shoppractice{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+.article{
+    
+    box-shadow: 15px 8px 88px -33px rgba(96,96,96,0.41);
+-webkit-box-shadow: 15px 8px 88px -33px rgba(96,96,96,0.41);
+-moz-box-shadow: 15px 8px 88px -33px rgba(96,96,96,0.41);
+margin: 20px;
+padding:20px;
+border-radius: 8px;
+transition: transform 350ms ease-in-out;
+}
+
+
+.article:hover{
+    transform: translateY(-2px);
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 600px) {
+    .shoppractice{
+        
+        grid-template-columns: repeat(1, 1fr);
+    
+    }
+    
+  }

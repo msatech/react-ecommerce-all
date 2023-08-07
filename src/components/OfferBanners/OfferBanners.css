@@ -1,0 +1,43 @@
+
+.offerbanners .card {
+    width: 100%;
+    margin-left: -30px;
+    padding: 10px;
+    border-radius: 20px;
+    background: orange;
+    border: none;
+    color: #fff;
+    height: 350px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.offerbanners .container {
+    
+}
+
+.offerbanners .card h1 {
+    font-size: 48px;
+    margin-bottom: 0px
+}
+
+.offerbanners.card span {
+    font-size: 28px
+}
+
+.offerbanners.image {
+    position: absolute;
+    opacity: .1;
+    left: 0;
+    top: 0
+}
+
+.offerbanners .image2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: .1
+}

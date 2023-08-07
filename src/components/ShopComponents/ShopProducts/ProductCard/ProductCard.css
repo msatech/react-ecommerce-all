@@ -1,0 +1,143 @@
+
+.productcard .card {
+    cursor: pointer;
+    background-color: #ffffff;
+    border-radius: 16px;
+    width: 100%;
+    border: 1px solid rgba(235, 234, 234, 0.623);
+    position: relative;
+}
+
+.productcard .card:hover:hover{
+    box-shadow: var(--Darker__BoxShadow)
+}
+
+
+.productcard .card .product__top__section{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.product__bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product__bottom h6{
+    font-weight: 600;
+}
+
+p {
+    color: #b7b1b1;
+    font-weight: 500
+}
+
+.discBtn {
+    background-color: #fe2c53;
+    border-radius:50%;
+    font-size: 13px;
+    font-weight: 500;
+    position: absolute;
+    z-index: 1;
+    top:20px;
+    width:40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product__top__section .heart__section div{
+    background-color: rgba(238, 234, 234, 0.384);;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+   
+}
+
+.heart__icon__button:hover .fa-heart {
+    color: #f05c5d;
+    
+}
+.heart__icon__button:hover .heart__section div{
+    background-color: rgba(238, 234, 234, 0.76);
+}
+
+.product__top__section .true .fa-heart{
+    color: #f05c5d;
+
+}
+
+.fa-heart {
+    color: #d6d3d3
+}
+
+.fa-balance-scale {
+    color: #968888
+}
+
+.fa-arrows {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg)
+}
+
+.buy {
+    border-radius: 20px;
+    background-color: #e8f6f6;
+    color: #2bc4ba;
+    display: flex;
+    align-items: center;
+    justify-content: center !important;
+
+}
+
+.cart {
+    background-color: #fe2c53;
+    border-radius: 30px;
+    position: relative;
+    right: 35px
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: none
+}
+
+*:focus {
+    outline: none
+}
+
+
+@media screen and (max-width: 600px) {
+    .productcard .card {
+        padding: 10px !important;
+        
+    }
+    .discBtn{
+        width: 35px;
+        height: 35px;
+    }
+    .product__bottom .product__title{
+        font-size: 12px !important;
+    }
+    
+    .product__bottom h6{
+        font-weight: 600;
+        font-size: small;
+        margin-top: 5px;
+    }
+    
+    .buy {
+        width: 40px;
+        font-size: small;
+    
+    }
+    
+  }

@@ -1,0 +1,149 @@
+.mobilemenu__navbar{
+    display:flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(241, 238, 238);
+    align-items: center;
+    margin: 0 20px;
+    padding:10px 0;
+    margin-bottom: 20px;
+}
+
+
+
+.mobilemenu__drawer__icon{
+    font-weight: 600;
+    
+    
+    cursor: pointer;
+}
+
+.mobilemenu__left img{
+    
+    height:40px;
+    margin-top: -5px;
+}
+
+.mobilemenu__right{
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+.mobilemenu__option{
+    margin:0 10px;
+    padding: 4px 10px;
+    align-items: center;
+    padding-top: 5px;
+    border: 1px solid rgb(241, 238, 238);
+}
+
+.mobilemenu__option:hover{
+   
+    color:#FF2D55;
+}
+
+.search__input > input{
+    border: none !important;
+    background-color: transparent;
+    outline-width: 0;
+    width: 100%;
+    
+}
+
+.search__input{
+    display: flex;
+    align-items: center;
+    background-color: #eff2f5;
+    padding: 10px;
+    
+    border-radius: 999px;
+    width: 100%;
+    margin-bottom: 20px;
+    
+}
+
+
+.search__seaction{
+    
+    margin-bottom: 20px;
+
+}
+
+
+
+.mobilemenu__sidenav__menus{
+    display:flex;
+    width: 100%;
+    
+}
+
+.ant-tabs-tab{
+    background-color: Red;
+    max-width:100%;
+    
+    
+}
+
+
+.ant-tabs-tab.ant-tabs-tab {
+    background-color: #F9F9F9 !important;
+    z-index: 2;
+    width: 170px !important;
+    display: flex;
+    justify-content: center;
+   
+    
+  }
+
+
+  .ant-tabs-tab.ant-tabs-tab {
+    
+    z-index: 2 !important;
+    
+    
+    
+  }
+
+
+.mobilemenu__sidenav__menus{
+    margin-right: 0 !important;
+    padding:0 !important;
+    width: 120% !important;
+}
+
+  .ant-tabs-tab.ant-tabs-tab-active{
+    background-color: white !important;
+    color:grey !important;
+    
+    
+  }
+
+  .ant-tabs-tab-btn{
+    color:grey !important;
+    display: flex;
+    align-items: center;
+    
+  }
+
+  .mobilemenu__sidenav__menu{
+      display: flex;
+      justify-content: center;
+      
+  }
+  .mobilemenu__sidenav__menu span{
+    padding-right: 10px;
+    
+}
+
+
+.mobilemenu__sidenav__menu__option{
+    border-bottom:1px solid rgb(241, 238, 238); ;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    .mobilemenu__sidenav{
+        width:300px !important;
+    }
+}

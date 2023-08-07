@@ -1,0 +1,144 @@
+.newmobilebottom .tabs {
+    --background: #fff;
+    --text-color: #414856;
+    --color-01: #ffb400;
+    --color-02: #ff5100;
+    --color-03: #9901f8;
+    --width: 100%;
+    --height: 60px;
+    --border-radius: var(--height);
+    background: var(--background);
+    width: var(--width);
+    height: var(--height);
+    padding: 0;
+    
+    
+    box-shadow: var(--Darker__BoxShadow);
+    
+    /* border-top:1px solid rgb(194, 192, 192); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+}
+.newmobilebottom .tabs label {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    position: relative;
+}
+.newmobilebottom .tabs label::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--color-01);
+    border-radius: 50%;
+    opacity: var(--opacity, 0);
+    transform: scale(0);
+}
+.newmobilebottom .tabs label svg {
+    width: 100%;
+    height: 100%;
+}
+.newmobilebottom .tabs label svg .icon {
+    fill: none;
+    stroke: var(--text-color);
+    stroke-dashoffset: 98;
+    stroke-width: 2px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+.newmobilebottom .tabs label svg .icon:nth-child(2) {
+    opacity: 0;
+    stroke: var(--color-01);
+    animation-delay: 0.2s !important;
+}
+.newmobilebottom .tabs label svg .icon:nth-child(3) {
+    opacity: 0;
+    stroke: var(--color-02);
+    animation-delay: 0.3s !important;
+}
+.newmobilebottom .tabs label svg .icon:nth-child(4) {
+    opacity: 0;
+    stroke: var(--color-03);
+    animation-delay: 0.4s !important;
+}
+.newmobilebottom .tabs label svg .icon:nth-child(5) {
+    opacity: 0;
+    stroke: var(--color-01);
+    animation-delay: 0.5s !important;
+}
+.newmobilebottom .tabs input {
+    display: none;
+}
+.newmobilebottom .tabs input:checked + label::before {
+    animation: click-animation 0.4s ease forwards;
+}
+.newmobilebottom .tabs input:checked + label svg .icon:first-child {
+    animation: stroke-animation-first 0.5s linear forwards 0.5s;
+}
+.newmobilebottom .tabs input:checked + label svg .icon:nth-child(2) {
+    animation: stroke-animation 0.5s linear;
+}
+.newmobilebottom .tabs input:checked + label svg .icon:nth-child(3) {
+    animation: stroke-animation 0.5s linear;
+}
+.newmobilebottom .tabs input:checked + label svg .icon:nth-child(4) {
+    animation: stroke-animation 0.5s linear;
+}
+.newmobilebottom .tabs input:checked + label svg .icon:last-child {
+    animation: stroke-animation-last 0.5s linear forwards;
+}
+@keyframes stroke-animation-first {
+    0% {
+        opacity: 1;
+        stroke-dashoffset: 98;
+        stroke-dasharray: 98 0;
+   }
+    100% {
+        opacity: 0;
+        stroke-dashoffset: 0;
+        stroke-dasharray: 0 98;
+   }
+}
+@keyframes stroke-animation {
+    0% {
+        opacity: 1;
+        stroke-dashoffset: 98;
+        stroke-dasharray: 0 98 0 0;
+   }
+    15% {
+        stroke-dasharray: 0 98 18 0;
+   }
+    100% {
+        opacity: 1;
+        stroke-dashoffset: 0;
+        stroke-dasharray: 0 98 18 0;
+   }
+}
+@keyframes stroke-animation-last {
+    0% {
+        opacity: 1;
+        stroke-dashoffset: 98;
+        stroke-dasharray: 98 98 18 0;
+   }
+    15% {
+        stroke-dasharray: 116 98 18 0;
+   }
+    100% {
+        opacity: 1;
+        stroke-dashoffset: 0;
+        stroke-dasharray: 116 98 18 0;
+   }
+}
+@keyframes click-animation {
+    50% {
+        transform: scale(4);
+        opacity: 0.1;
+   }
+}

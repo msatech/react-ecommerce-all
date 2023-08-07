@@ -1,0 +1,132 @@
+
+.dealsoftheday{
+    
+    box-shadow: 0px 1px 5px rgba(100, 100, 100, 0.2);
+}
+.dealsoftheday__header p{
+    color:grey;
+    margin-top: -15px;
+}
+
+.dealsoftheday .product__content{
+    padding: 30px;
+}
+.dealsoftheday__header{
+    padding:10px 20px 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(224, 219, 219);
+    
+}
+
+
+.dealsoftheday__header button{
+    margin-top: -10px;
+	width: 100px;
+    height: 45px;
+	border-radius: 2px;
+	background-color: #FF2D55;
+	color: #fff;
+	font-weight: 600;
+	letter-spacing: 0.1em;
+	border:none;
+	
+}
+
+.dealsoftheday__header h2{
+	font-weight: 600;
+}
+
+strike{
+    color:rgb(161, 151, 151);
+}
+
+.delas__item img{
+    height:60px;
+    width: 60px;
+    margin-right: 10px;
+}
+.delas__item{
+    display: flex;
+    
+    padding: 5px;
+
+
+    
+}
+.delas__item__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.deals__item__title{
+    font-size:medium;
+    font-weight: 500;
+    margin-top: 5px;
+}
+.deas__item__price{
+    margin-top: -15px;
+}
+
+.deals__items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    
+}
+
+.deals__banner img{
+    object-fit: cover;
+    height: 250px;
+    width: 100%;
+   
+}
+
+
+.delas__item:hover{
+    cursor: pointer;
+    box-shadow: 0 0 8px #d3d3d3;
+  
+}
+
+.delas__item:hover .deals__item__title{
+    color: #FF2D55;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .deals__items{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        
+    }
+    .dealsoftheday .product__content{
+        padding: 10px;
+    }
+    .delas__item:hover{
+        cursor: pointer;
+        box-shadow: none;
+        
+      
+    }
+    .dealsoftheday__header h2{
+        font-weight: 600;
+        font-size: x-large;
+    }
+    
+    .dealsoftheday__header p{
+        display: none;
+    }
+    
+    .card{
+        margin-top:10px !important;
+    }
+	
+    
+}
+
+

@@ -1,0 +1,68 @@
+.orders__page{
+    margin: 0 60px; 
+    
+}
+
+.orders__page h4{
+    font-weight: 600;
+    margin: 40px 0px;
+}
+
+.orders__page__orders__section .orders__top__title__card{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: var(--Lighter__BoxShadow);
+    border: none;
+    
+
+}
+
+.orders__page__orders__section .orders__top__title__card .nav-pills{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row !important;
+    
+    
+}
+
+.orders__page__orders__section .orders__top__title__card .nav-pills .nav-link{
+    border-radius: 0px !important;
+    color: var(--theme__dark);
+
+}
+
+
+.orders__page__orders__section .orders__top__title__card .nav-pills .active{
+    background-color: transparent !important;
+    color: var(--primary__red);
+    font-weight: 600;
+    border-bottom: 1px solid var(--primary__red);
+    
+}
+
+
+/* Search Section */
+
+.orders__page__orders__search .orders__search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    padding-bottom:5px ;
+}
+
+.orders__page__orders__search .orders__search input{
+border: none;
+padding: 0 10px;
+}
+
+/* orders Content */
+
+.orders__page__orders__section .card__content{
+    margin: 20px 0px;
+}

@@ -1,0 +1,103 @@
+
+.productcard .card {
+    cursor: pointer;
+    background-color: #ffffff;
+    border-radius: 16px;
+    width: 100%;
+    border: 1px solid rgba(224, 224, 224, 0.623);
+    
+}
+
+.productcard .card:hover:hover{
+    box-shadow: 5px 5px 21px 11px rgba(6, 0, 0, 0.05);
+}
+
+
+.productcard .card .product__top__section{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.product__bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product__bottom h6{
+    font-weight: 600;
+}
+
+p {
+    color: #b7b1b1;
+    font-weight: 500
+}
+
+.discBtn {
+    background-color: #fe2c53;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.product__top__section .heart__section div{
+    background-color: rgba(238, 234, 234, 0.384);;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+   
+}
+
+.heart__icon__button:hover .fa-heart {
+    color: #f05c5d;
+    
+}
+.heart__icon__button:hover .heart__section div{
+    background-color: rgba(238, 234, 234, 0.76);
+}
+
+.product__top__section .true .fa-heart{
+    color: #f05c5d;
+
+}
+
+.fa-heart {
+    color: #d6d3d3
+}
+
+.fa-balance-scale {
+    color: #968888
+}
+
+.fa-arrows {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg)
+}
+
+.buy {
+    border-radius: 20px;
+    background-color: #e8f6f6;
+    color: #2bc4ba
+}
+
+.cart {
+    background-color: #fe2c53;
+    border-radius: 30px;
+    position: relative;
+    right: 35px
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: none
+}
+
+*:focus {
+    outline: none
+}

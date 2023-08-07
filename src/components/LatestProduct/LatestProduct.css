@@ -1,0 +1,45 @@
+.latestproduct{
+    background: rgba(203, 225, 238, 0.3);
+    padding-top: 90px !important;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.latestproduct .owl-nav {
+    
+    display: none;
+}
+
+
+.latestproduct__header{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-bottom:40px;
+}
+.latestproduct__header button{
+	width: 100px;
+	border-radius: 15px;
+	background-color: #FF2D55;
+	color: #fff;
+	font-weight: 600;
+	letter-spacing: 0.1em;
+	border:none;
+	
+}
+
+.latestproduct__header h2{
+	font-weight: 600;
+	text-align: center;
+}
+.latestproduct__header p{
+	
+	text-align: center;
+	color:grey;
+}
+
+
+

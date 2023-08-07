@@ -1,0 +1,46 @@
+.main__section{
+    margin: 0 60px;
+    background-color: #f8f4f4;
+}
+
+
+
+.productcateogry__section{
+    margin: 45px 60px;
+    
+}
+
+
+
+
+  @media screen and (max-width: 990px) {
+    .main__section{
+        margin: 0 10px;
+
+    }
+    
+    
+  }
+
+  @media screen and (min-width: 990px) {
+    
+    .home__mobilemenu{
+        display: none !important;
+        
+    }
+    
+  }
+
+
+  @media screen and (max-width: 600px) {
+    
+    .productcateogry__section{
+      margin: 45px 10px;
+      
+  }
+    
+  }
+
+ 
+
+ 

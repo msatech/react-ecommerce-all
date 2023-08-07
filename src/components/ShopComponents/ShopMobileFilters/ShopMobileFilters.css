@@ -1,0 +1,29 @@
+/* Opoen Backdrop/ side nav for Filters */
+
+.shopmobilefilters .shopmobile__toggle__btn{
+    position: absolute;
+    top:30%;
+    z-index: 999;
+    left: 5px;
+    
+    border: 1px solid rgb(219, 219, 219);
+    background-color: #34495E;
+    color: #fff;
+    
+    
+}
+.shopmobilefilters .shopmobile__toggle__btn:hover{
+    box-shadow: 5px 5px 21px 11px rgba(6, 0, 0, 0.05);
+}
+
+.shopmobilefilters{
+    display: none;
+}
+
+@media screen and (max-width: 1300px) {
+    .shopmobilefilters{
+        display: block;
+    }
+    
+    
+  }

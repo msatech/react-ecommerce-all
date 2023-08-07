@@ -1,0 +1,147 @@
+.dropdown-menu{
+    width: 70vw;
+    
+}
+
+.col-3{
+    border-right:1px solid #F4F4F4;
+    
+}
+
+.dropdown-menu .dropdown-item:hover{
+    color: #FF2D55;
+    
+}
+
+.dropdown button{
+    display: flex;
+    border: 1px solid #e2dfdf;
+    background-color: #fff;
+    
+}
+.dropdown button span{
+    margin-left: 20px;
+}
+
+.dropdown-toggle::after {
+    display:none;
+}
+
+
+.btn:focus {
+    outline: none;
+  }
+
+.icon__category{
+    color:#FF2D55;
+}
+
+
+.dropdown .btn.focus, .dropdown .btn:focus {
+    outline: 0;
+    box-shadow: none!important;
+}
+
+.menu__category{
+    overflow-y: scroll;
+    padding-left:20px;
+    display: flex;
+    flex-direction: column;
+    height:400px;
+    overflow-x: hidden;
+    word-wrap: break-word;
+    width: 100%;
+}
+
+
+.menu__category::-webkit-scrollbar {
+    width: 5px;
+    display: none;
+    transition: display 400ms ease-in-out;
+  }
+  
+  .menu__category:hover.menu__category::-webkit-scrollbar{
+      display: block !important;
+  }
+   
+  .menu__category::-webkit-scrollbar-track {
+    background: #ddd;
+  }
+
+  .menu__category::-webkit-scrollbar-thumb {
+    background: rgb(192, 189, 189); 
+    border-radius:10px;
+  }
+
+
+
+
+
+
+
+  .category__data{
+      display: grid ;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(12, 1fr);
+      gap: 5px;
+      
+      word-wrap: break-word;
+      max-width: 100%;
+      padding-right: 20px;
+      overflow-wrap: break-word !important;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      overflow-y:scroll;
+      /* overflow-x:scroll; */
+      height:400px;
+      
+      
+  }
+
+
+
+  
+.category__data::-webkit-scrollbar {
+    width: 5px;
+    height:5px;
+    display: none;
+    transition: display 400ms ease-in-out;
+    
+  }
+
+
+  .category__data:hover.category__data::-webkit-scrollbar{
+    display: block !important;
+}
+ 
+ 
+.category__data::-webkit-scrollbar-track {
+  background: #ddd;
+}
+
+.category__data::-webkit-scrollbar-thumb {
+  background: rgb(192, 189, 189); 
+  border-radius:10px;
+}
+
+  
+
+.subcategory__data__item{
+    display: grid;
+    
+    
+}
+
+.sub__category{
+    font-weight:600;
+    color: #3c4852;
+}
+
+
+.subcategory__data__item .dropdown-item{
+    font-size: x-small !important;
+    color:rgb(117, 115, 115) !important;
+}
+
+

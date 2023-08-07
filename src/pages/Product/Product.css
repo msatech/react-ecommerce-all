@@ -1,0 +1,159 @@
+.product{
+    margin:0 60px;
+    position: relative;
+}
+
+
+.thumbnail_images ul {
+    list-style: none;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-top: 10px
+}
+
+.thumbnail_images ul li {
+    margin: 5px;
+    padding: 10px;
+    border: 2px solid #eee;
+    cursor: pointer;
+    transition: all 0.5s;
+    
+}
+
+.thumbnail_images ul li:hover {
+    border: 2px solid #000
+}
+
+.thumbnail_images ul li img{
+    height:70px;
+    width: 70px;
+    
+}
+
+.main_image{
+    display: flex;
+    justify-content: center;
+    
+    border-bottom: 1px solid #eee;
+    height: 400px;
+    width: 100%;
+    z-index: 999;
+    
+}
+
+
+.heart {
+    height: 29px;
+    width: 29px;
+    background-color: #eaeaea;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.content p {
+    font-size: 14px;
+    color:#878f96;
+}
+
+.product__content h3{
+    font-weight: 600;
+}
+
+.ratings span {
+    font-size: 14px;
+    margin-left: 12px
+}
+
+.colors {
+    margin-top: 5px
+}
+
+.colors ul {
+    list-style: none;
+    display: flex;
+    padding-left: 0px
+}
+
+.colors ul li {
+    height: 20px;
+    width: 20px;
+    display: flex;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer
+}
+
+.colors ul li:nth-child(1) {
+    background-color: #6c704d
+}
+
+.colors ul li:nth-child(2) {
+    background-color: #96918b
+}
+
+.colors ul li:nth-child(3) {
+    background-color: #68778e
+}
+
+.colors ul li:nth-child(4) {
+    background-color: #263f55
+}
+
+.colors ul li:nth-child(5) {
+    background-color: black
+}
+
+.right-side {
+    position: relative
+}
+
+
+.buttons .btn {
+    height: 50px;
+    width: 150px;
+    border-radius: 0px !important
+}
+
+
+
+
+/* Responsive */
+
+.thumbnail__items{
+    display: flex;
+    overflow-x: scroll;
+}
+
+.thumbnail__items::-webkit-scrollbar{
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .product{
+        margin:0 10px;
+       
+    }
+    
+    .thumbnail_images ul li img{
+        height:60px;
+        width: 60px;
+        
+    }
+    .main_image{
+        
+        height: 300px;
+     
+        
+    }
+    .product__content h3{
+        font-size: larger;
+    }
+    .product__content{
+        margin-top: 15px;
+    }
+  }
+
+  

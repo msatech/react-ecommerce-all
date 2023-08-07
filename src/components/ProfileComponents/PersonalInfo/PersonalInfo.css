@@ -1,0 +1,16 @@
+.personalinfo__card{
+    box-shadow: var(--Lighter__BoxShadow);
+    padding: 30px;
+    border:none;
+}
+
+
+.personalinfo__card .personalinfo__data{
+    color:var(--theme__dark);
+    padding-left: 10px;
+    font-weight: 600;
+}
+
+.personalinfo__card p{
+    font-size: small;
+}

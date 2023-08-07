@@ -1,0 +1,85 @@
+.profile{
+    margin:0 60px;
+}
+
+.profile h4{
+    font-weight: 600;
+    margin: 40px 0px;
+}
+
+
+.profile__page .profile__card{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: var(--Lighter__BoxShadow);
+    border: none;
+    
+
+}
+
+.profile__page .profile__card .nav-pills{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row !important;
+    
+    
+}
+
+.profile__page .profile__card .nav-pills .nav-link{
+    border-radius: 0px !important;
+    color: var(--theme__dark);
+
+}
+
+
+.profile__page .profile__card .nav-pills .active{
+    background-color: transparent !important;
+    color: var(--primary__red);
+    font-weight: 600;
+    border-bottom: 1px solid var(--primary__red);
+    
+}
+
+
+.profile__page .profile__section__content{
+    margin: 20px 0px;
+    
+}
+
+
+
+
+/* mobile Responsive */
+
+@media screen and (max-width: 990px) {
+    .profile{
+        margin: 0px 10px !important;
+    }
+    .profile__page .profile__card .nav-pills .nav-link{
+        font-size: small;
+    }
+    .profile__page .profile__card{
+        padding: 10px;
+    }
+    .profile h4{
+        
+        margin: 0px 0px 15px 0px;
+    }
+  }
+
+
+  @media screen and (max-width: 400px) {
+    
+    .profile__page .profile__card .nav-pills .nav-link{
+        font-size: smaller;
+    }
+    .profile__page .profile__card{
+        padding: 5px;
+    }
+    
+  }

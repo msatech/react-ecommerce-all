@@ -1,0 +1,155 @@
+.personalinfo__card__address{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding:60px 20px;
+    box-shadow:var(--Lighter__BoxShadow);
+    border: none;
+}
+
+
+/* Display Address Cards */
+.personalinfo__card__display__address{
+    padding: 20px;
+    
+    height: 200px;
+    /* box-shadow: var(--Lighter__BoxShadow); */
+    border: var(--GreyDottedBorder);
+    border-radius: var(--border__radius);
+    position: relative;
+}
+
+
+.personalinfo__card__display__address:hover{
+    
+    box-shadow: var(--Lighter__BoxShadow);
+    border: var(--RedDottedBorder);
+    border-radius: var(--border__radius);
+    cursor: pointer;
+}
+
+.personalinfo__card__display__address:hover .personalinfo__card__display__address__delete__btn .address__delete__btn{
+    display: block;
+}
+
+.personalinfo__card__display__address .display__fullname{
+    font-weight: 600;
+    font-size: 16px;
+    color:var(--theme__dark)
+}
+
+.personalinfo__card__add__address{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 200px;
+    /* box-shadow: var(--Lighter__BoxShadow); */
+    border: var(--GreyDottedBorder);
+    border-radius: var(--border__radius);
+    
+
+}
+
+
+.personalinfo__card__display__address__delete__btn .address__delete__btn{
+    color:var(--primary__red);
+    position: absolute;
+    top:-10px;
+    right:-5px;
+    display: none;
+    transition: display 300ms ease-in-out;
+}
+
+
+
+
+.personalinfo__card__add__address .add__address{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.personalinfo__card__add__address .add__address .add__address__icon{
+    color: var(--MediumGrey);
+}
+
+
+.personalinfo__card__add__address:hover{
+    
+    box-shadow: var(--Lighter__BoxShadow);
+    border: var(--RedDottedBorder);
+    border-radius: var(--border__radius);
+    cursor: pointer;
+    
+}
+
+
+.personalinfo__card__add__address:hover .add__address__icon{
+    color:var(--primary__red)
+}
+
+/* offcanvas Css */
+
+.address .add__address__canvas{
+    height: 60%;
+    width: 100%;
+    box-shadow: var(--Darker__BoxShadow);
+    border: none !important;
+}
+
+
+
+/* Responsive  */
+@media screen and (max-width: 1000px) {
+    
+    .personalinfo__card__address{
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+    
+  }
+
+  @media screen and (max-width: 700px) {
+    
+    .personalinfo__card__address{
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    
+  }
+
+@media screen and (max-width: 600px) {
+    .personalinfo__card{
+    
+        padding: 20px !important;
+        display: flex;
+    
+    }
+    .address .add__address__canvas{
+        padding-top: 0px;
+        border-top-left-radius: 5%;
+        border-top-right-radius: 5%;
+    }
+    
+
+    
+  }
+
+  @media screen and (max-width: 500px) {
+    
+    .personalinfo__card__address{
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    
+  }
+
+
+  
